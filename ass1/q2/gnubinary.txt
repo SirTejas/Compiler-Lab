@@ -1,0 +1,6 @@
+set term pngcairo size 1280,720
+set output "logn.png"
+set title "Binary search " font "Times-Roman,20"
+set xlabel "(size)" font "times-Roman,15"
+set ylabel "Time(ns)" font "Times-Roman,15"
+plot "Worst.txt" with linespoints

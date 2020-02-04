@@ -1,0 +1,6 @@
+set term pngcairo size 1280,720
+set output "selSortWorst--.png"
+set title "Selection-Sort Worst Case Analysis " font "Times-Roman,20"
+set xlabel "Size Of The Rev-Sorted Input Array" font "times-Roman,15"
+set ylabel "Time Taken to sort the Input Array (Sec)" font "Times-Roman,15"
+plot "worst.txt" using 1:2 with linespoints, "worst.txt" using 1:3 with linespoints
